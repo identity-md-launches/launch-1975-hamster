@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "HamsterToken",
+    "name": "Hamster",
+    "symbol": "HAMSTER",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 1000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0xee2aaa315cf7ed169f93148d30d24af9318dbb66"
+  },
+  "notes": "HamsterToken (src/HamsterToken.sol) is a plain fixed-supply OpenZeppelin ERC-20 named Hamster with symbol HAMSTER and 18 decimals. Its constructor takes no arguments and mints the whole supply of 1,000,000,000 tokens (1000000000000000000000000000 minor units) once to msg.sender, the launch factory. There is no owner, no further mint, no fee, no burn on transfer, no pause and no blocklist, so every launch flow moves exactly what it says. The factory pays the supply out: 10% to the swarm's MerkleDistributor, 10% (poolBps 1000) seeds the IMD pool at a 2,500 IMD opening market cap, and the remaining 80% is forwarded to the dev vault at economics.remainderTo. The project's official Twitter / X account is @hamsterhourgame, exposed by the TWITTER constant. The launch deploys no application contracts."
+}
