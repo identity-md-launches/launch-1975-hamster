@@ -1,0 +1,5 @@
+cache/
+out/
+broadcast/
+# Inert leftover from vendoring OpenZeppelin as plain files (not a submodule).
+lib/openzeppelin-contracts/.gitmodules
